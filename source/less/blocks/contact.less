@@ -1,0 +1,163 @@
+.contact {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.contact__map {
+  width: 100%;
+  min-height: 200px;
+  background: url("../img/map.png") no-repeat top center;
+  background-size: cover;
+}
+
+.contact__info {
+  background-color: #1D1D1D;
+  background-image: url("../img/contact-m-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 21px;
+  padding-bottom: 28px;
+  position: relative;
+}
+
+.contact__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+  margin: 11px 16px 0;
+  position: relative;
+}
+
+.contact__tel {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-left: 26px;
+  position: relative;
+}
+
+.contact__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 120%;
+  text-align: left;
+  color: #FFFFFF;
+  margin: 0 24px;
+  position: relative;
+  margin-bottom: 33px;
+}
+
+.contact__title::before {
+  content: "";
+  width: 288px;
+  height: 1px;
+  background: #FFFFFF;
+  display: block;
+  position: absolute;
+  left: -7px;
+  bottom: -15px;
+  z-index: 1;
+}
+
+.contact__add {
+  padding-left: 24px;
+}
+
+.contact__mail {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+  margin: 10px 16px 0;
+  padding-left: 26px;
+  position: relative;
+}
+
+.contact__vk {
+  position: absolute;
+  right: 15px;
+  bottom: 12px;
+}
+
+.contact__vk svg {
+  fill: #ffffff;
+  width: 32px;
+  height: 32px;
+}
+
+.contact__add::before,
+.contact__mail::before,
+.contact__tel::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  position: absolute;
+  left: 2px;
+  top: 3px;
+}
+
+.contact__tel::before {
+  background: url("../img/i-tel.svg") no-repeat;
+}
+
+.contact__add::before {
+  background: url("../img/i-map.svg") no-repeat;
+}
+
+.contact__mail::before {
+  background: url("../img/i-mail.svg") no-repeat bottom;
+}
+@media (min-width: @size-tablet) {
+  .contact {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact__info {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .contact__title {
+    font-size: 36px;
+    line-height: 144%;
+  }
+
+  .contact__add {
+    font-size: 20px;
+    line-height: 140%;
+  }
+
+  .contact__mail,
+  .contact__tel,
+  .contact__text {
+    font-size: 22px;
+    line-height: 140%;
+  }
+
+
+  .contact__add::before,
+  .contact__mail::before,
+  .contact__tel::before {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (min-width: 1140px) {
+  .contact__title::before {
+    width: 551px;
+    background: #E21313;
+  }
+}
